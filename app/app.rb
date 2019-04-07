@@ -22,7 +22,7 @@ module Desafio
     end
 
     use OmniAuth::Builder do
-      provider :facebook, '655402758237739', '111f0a873cdd522ee593be710090b49e', provider_ignores_state: true
+      provider :facebook, 'app_id', 'app_secret', provider_ignores_state: true
     end
   end
 end
