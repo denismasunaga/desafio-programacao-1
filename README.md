@@ -8,6 +8,9 @@ Após isso faça:
 git clone https://github.com/denismasunaga/desafio-programacao-1
 bundle install
 bundle exec rake db:migrate
+
+Por motivos de segurança, removi a chave e a id do facebook. Essas podem ser obtidas em developers.facebook.com. Basta criar um aplicativo novo do tipo "Integrar Login do Facebook" para obter a chave e a id. Feito isso:
+
 padrino s
 
 Em um browser digite:
