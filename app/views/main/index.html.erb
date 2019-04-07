@@ -1,0 +1,16 @@
+<div>
+  <% form_tag url(:main, :upload), :method => :post, :enctype=>"multipart/form-data" do %>
+    <%= label_tag :file, :class => 'first' %>
+    <%= file_field_tag :file, :class => 'long', :value => params[:file] %>
+
+    <div style="padding-top: 20px">
+      <%= submit_tag "Upload"%>
+    </div>
+
+    <div style="padding-top: 20px">
+
+      <%= link_to('Logout', '/session/logout') %>
+    </div>
+
+  <% end %>
+</div>
